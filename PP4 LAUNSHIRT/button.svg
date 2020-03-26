@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 77.94 40.68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #b534eb;
+        font-family: Enceladus-DemiBold, Enceladus;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.03em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.02em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="20.34" x2="77.94" y2="20.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b534eb"/>
+      <stop offset="1" stop-color="#ff8559"/>
+    </linearGradient>
+  </defs>
+  <title>button</title>
+  <rect class="cls-1" x="1" y="1" width="75.94" height="38.68" rx="10.57"/>
+  <text class="cls-2" transform="translate(17.3 24.17)">BU<tspan class="cls-3" x="14.48" y="0">T</tspan><tspan class="cls-4" x="20.84" y="0">T</tspan><tspan x="26.54" y="0">ON </tspan></text>
+</svg>

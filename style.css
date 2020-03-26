@@ -1,0 +1,312 @@
+@font-face {
+    src: url(fonts/Enceladus-Bold-_Personal-use__1.woff);
+    font-family: boldenc;
+}
+@font-face {
+    src: url(fonts/AlexandriaFLF-Italic.woff);
+    font-family: italicale;
+}
+@font-face {
+    src: url(fonts/AlexandriaFLF.woff);
+    font-family: alexandria;
+}
+
+
+h1,h2,h3, label, button {
+    font-family: boldenc;
+    text-transform: uppercase;
+}
+
+a,li,p,cite {
+    font-family: alexandria;
+}
+
+h1, h2, label {
+  font-size: 20px;
+}
+h3, botton {
+   font-size: 14px;
+}
+
+p, li, a {
+    font-size: 10px;
+}
+
+a, a:visited, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+input:focus {
+ outline: none;
+}
+
+input {
+    padding-left: 25px;
+    background-color: rgba(82, 188, 255,.5);
+    border: none;
+}
+
+header {
+    background-color: #edfef0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+main {
+    background-color: #52bcff;
+}
+
+main.action-page article {
+    background-color: #edfef0;
+    font-size: 18px;
+}
+
+main.action-page article.base-information  p{
+    stroke: black;
+    margin: 5px 0;
+}
+
+.gen-button {
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 5px 10px 2px;
+    border: none
+}
+
+.pick-btn {
+    background-color: #b534eb;
+    color: #edfef0;
+}
+
+.deli-btn {
+    background-color: #e8d146;
+    color: #edfef0;
+}
+
+.self-btn {
+    background-color: #ff8559;
+    color: #edfef0;
+}
+
+.logo-in-header {
+    display: block;
+    margin: 0 auto;
+    width: 300px ;
+    height: 80px ;
+    background: url(img/LaunShirt.svg) center no-repeat;
+}
+.selection  {
+    color: #52bcff;
+}
+
+
+form div.button-decorator {
+    padding: 5px 10px 0;
+    border-radius: 25px;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image:linear-gradient(#edfef0, #edfef0), linear-gradient(101deg, #B534EB, #FF8559);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #edfef0 inset;
+}
+form div.button-decorator button {
+    
+    text-transform: uppercase;
+    border: none;
+    background: -webkit-linear-gradient( #B534EB, #FF8559);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  form a {
+    width: 100%;
+    font-weight: bold;
+    color: #52bcff
+  }
+
+
+div.log-in {
+    background-color: #edfef0;
+}
+div.log-in form {
+    padding: 10px;
+}
+
+div.log-in form > * {
+    display: block;
+    margin: 10px 0;
+}
+
+div.log-in label{
+    width: 100%;
+
+  }
+  
+
+  footer {
+    color:#EDFEF0;
+    background: #FF8559;
+}
+
+footer section {
+    margin-top: 20px;
+}
+
+.icon { 
+    display: block;
+    margin: 0 auto;
+    transform: scale(.30);
+    
+}
+
+.facebook {
+    width: 50px ;
+    height: 100px;
+    background: url(img/svg/facebook-logo.svg) center no-repeat;
+}
+
+.instagram {
+    width: 100px ;
+    height: 100px;
+    background: url(img/svg/instagram-social-network-logo-of-photo-camera.svg) center no-repeat;
+}
+
+.twitter {
+    width: 100px ;
+    height: 100px;
+    background: url(img/svg/twitter-social-logotype.svg) center no-repeat;
+}
+
+footer p.copyright {
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+@media only screen and (max-width: 750px)  {
+    .logo-parent {
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo-parent-header {
+        padding-top: 15px;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
+        width: 300px ;
+        height: 100px ;
+        background: url(img/LaunShirt.svg) center no-repeat;
+    }
+
+    .log-in {
+        margin-top: 0;
+
+    }
+
+    div.log-in label {
+       margin-left: 50px;
+    }
+
+    div.log-in input {
+        width: 90%;
+        height: 45px;
+        border-radius: 25px;
+        margin: 10px auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    footer div.inner-footer {
+        width: 75%;
+    }
+
+}
+@media only screen and (min-width: 751px) {
+
+.logo {
+    display: inline-block;
+    width: 300px !important;
+    height: 300px !important;
+    background: url(img/LaunShirt.svg) center no-repeat;
+}
+
+
+div.log-in {
+    display: inline-block;
+    background-color: #edfef0;
+    border-radius: 10px;
+}
+div.log-in form {
+    margin: 0 auto;
+    width: 95%;
+    padding: 10px;
+}
+
+div.log-in form > * {
+    display: block;
+}
+
+div.log-in label {
+    margin-left: 20px;
+ }
+
+div.log-in input {
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+main.log-in-page {
+    height: 70vh !important;
+    background: center/cover url(img/laundry_machines.jpg) ;
+    z-index: -10;
+}
+main.log-in-page > *, footer.log-in-page > * {
+    position: relative;
+    z-index: 20;
+}
+
+main.log-in-page:after {
+    content: '';
+    position: absolute;
+    top:0;left:0;
+    width: 100%;
+    height: 70vh;
+    background: rgba(237, 254, 240, .6);
+    z-index: 1;
+}
+
+img {
+    width: 200px;
+}
+
+main.action-page article {
+    border-radius: 25px;
+}
+
+footer {
+    color:#EDFEF0;
+    background: #FF8559;
+}
+
+
+footer section {
+    margin-top: 20px;
+}
+
+footer p.copyright {
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+
+}
+
+
