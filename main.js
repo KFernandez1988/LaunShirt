@@ -1,8 +1,9 @@
 ( () => {
-    const page = window.location.pathname.split('/').pop();
+    const loc = window.location.pathname;
+    const page = loc.split('/').pop();
     console.log(page)
 
-    if(page == "index.html"){
+    if(page == "index.html" || page == ""){
         console.log("ok on index");
         console.log(window.screen.width);
         
@@ -58,6 +59,6 @@
         formsSelections.insertAdjacentHTML('afterbegin', menuComponent );
     } else {
         formsSelections.insertAdjacentHTML('afterbegin', buttonsComponents );
-    }
+     }
     }
 })()
