@@ -3,7 +3,7 @@
     const page = loc.split('/').pop();
     console.log(page)
 
-    if(page == "index.html" || page == ""){
+    if(page == "index.html" || page == "" || page == "/"){
         console.log("ok on index");
         console.log(window.screen.width);
         
