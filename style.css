@@ -67,6 +67,13 @@ main.action-page article.base-information  p{
     stroke: black;
     margin: 5px 0;
 }
+section.mail-row {
+ color: #edfef0;
+}
+
+div.mail-message {
+    background-color: #edfef0;
+}
 
 .gen-button {
     border-radius: 20px;
@@ -75,12 +82,12 @@ main.action-page article.base-information  p{
     border: none
 }
 
-.pick-btn {
+.pick-btn, .save-btn {
     background-color: #b534eb;
     color: #edfef0;
 }
 
-.deli-btn {
+.deli-btn, .cancel-btn {
     background-color: #e8d146;
     color: #edfef0;
 }
@@ -135,14 +142,47 @@ div.log-in form {
     padding: 10px;
 }
 
-div.log-in form > * {
+div.log-in form > *, form.multi-forms > *:not(div) {
     display: block;
     margin: 10px 0;
 }
 
-div.log-in label{
+div.log-in label, form.multi-forms label{
     width: 100%;
+  }
 
+
+  form.multi-forms {
+      background-color: #edfef0;
+  }
+
+  form.multi-forms  input {
+      border-radius: 25px;
+      width: 100%;
+      height: 35px;
+  }
+
+  div.form-change-buttons  button {
+      width: 50px;
+      height: 50px;
+      border: none;
+      color: #edfef0;
+  }
+
+  button.btn-address {
+      background-color: #B534EB;
+  }
+
+  button.btn-laundromat {
+    background-color: #E8D146;
+  }
+
+  button.btn-credit-card {
+      background-color: #ff8559;
+  }
+
+  button.btn-profile {
+      background-color: #000;
   }
   
 
@@ -161,6 +201,10 @@ footer section {
     transform: scale(.30);
     
 }
+footer div.icon-parent {
+    width: 50px;
+}
+
 
 .facebook {
     width: 50px ;
@@ -186,6 +230,7 @@ footer p.copyright {
  }
 
 @media only screen and (max-width: 750px)  {
+    
     .logo-parent {
         width: 100%;
         margin: 0;
@@ -218,14 +263,48 @@ footer p.copyright {
         margin: 10px auto;
     }
 
-    img {
+
+    section.mail-row {
+        overflow-x: scroll;
+    }
+
+    section.mail-row article p {
+      width: 100px;
+    }
+
+    div.mail-message .message {
+        margin: 15px 0 35px;
+    }
+
+    div.mail-message .message p {
+        width: 50%;
+    }
+
+    .buttons-elements{
+       width: 100vw;
+       margin: 0;
+       transform: translateX(-48px);
+    }
+
+     button.action-btn {
+       display: block;
+       width: 100vw;
+       border-radius: 0;
+       text-align: center;
+       font-size: 25px;
+    }
+
+    div.form-change-buttons  button {
         width: 100%;
+        height: 50px;
+    }
+    
+
+    img {
+        width: 100vw;
     }
 
-    footer div.inner-footer {
-        width: 75%;
-    }
-
+    
 }
 @media only screen and (min-width: 751px) {
 
@@ -268,7 +347,7 @@ main.log-in-page {
     background: center/cover url(img/laundry_machines.jpg) ;
     z-index: -10;
 }
-main.log-in-page > *, footer.log-in-page > * {
+main.log-in-page > * {
     position: relative;
     z-index: 20;
 }
@@ -291,9 +370,17 @@ main.action-page article {
     border-radius: 25px;
 }
 
-footer {
-    color:#EDFEF0;
-    background: #FF8559;
+section.mail-row, section.open-mail {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+div.mail-message {
+  border-radius: 25px;
+}
+
+form.multi-forms {
+    width: 100%;
 }
 
 
@@ -301,11 +388,12 @@ footer section {
     margin-top: 20px;
 }
 
+
+
 footer p.copyright {
     text-transform: uppercase;
     text-align: center;
  }
-
 
 }
 
