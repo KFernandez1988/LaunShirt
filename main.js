@@ -5,11 +5,11 @@
 
     if(page == "index.html" || page == "" || page == "/"){
         console.log("ok on index");
-        console.log(window.screen.width);
+        console.log(document.body.clientWidth);
         
         const logo = document.querySelector('.logo-parent');
         const logIn = document.querySelector('.log-in');
-        if(window.screen.width <= 751) {
+        if(document.body.clientWidth <= 751) {
             logIn.insertAdjacentHTML('afterbegin', `
             <div class="logo-parent align-self-center pt-3 mb-5">
             <i class="logo"></i>
@@ -55,7 +55,7 @@
     <button class="btn-profile col-12">Profile</button>`;
 
     const formsSelections = document.querySelector('.form-change-buttons');
-    if(window.screen.width <= 751) {
+    if(document.body.clientWidth <= 751) {
         formsSelections.insertAdjacentHTML('afterbegin', menuComponent );
     } else {
         formsSelections.insertAdjacentHTML('afterbegin', buttonsComponents );
